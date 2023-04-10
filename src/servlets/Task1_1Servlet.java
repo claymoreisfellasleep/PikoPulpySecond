@@ -16,7 +16,7 @@ public class Task1_1Servlet extends HttpServlet {
             throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
         for(int i = 1; i <= 10; i++){
-            out.println("<h1>Hello world!</h1>");
+            out.println("<h1>" + i + " Hello world!</h1>");
         }
     }
 }

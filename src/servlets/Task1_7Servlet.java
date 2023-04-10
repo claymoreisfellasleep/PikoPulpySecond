@@ -33,14 +33,14 @@ public class Task1_7Servlet extends HttpServlet {
         out.print("</form>");
         out.print("</div>");
 
-        List<Footballer> footballers = DBManager.getFootballers();
-        for (Footballer footballer : footballers) {
-            out.print("<h1>"+footballer.getName() + " " +footballer.getSurname()+"</h1>");
-            out.print("<h2>"+footballer.getClub()+"</h2>");
-            out.print("<h3>"+footballer.getSalary()+"</h3>");
-            out.print("<h4>"+footballer.getTransferPrice()+"</h4>");
-            out.print("<br>");
-        }
+//        List<Footballer> footballers = DBManager.getFootballers();
+//        for (Footballer footballer : footballers) {
+//            out.print("<h1>"+footballer.getName() + " " +footballer.getSurname()+"</h1>");
+//            out.print("<h2>"+footballer.getClub()+"</h2>");
+//            out.print("<h3>"+footballer.getSalary()+"</h3>");
+//            out.print("<h4>"+footballer.getTransferPrice()+"</h4>");
+//            out.print("<br>");
+//        }
     }
 
     @Override
@@ -57,7 +57,7 @@ public class Task1_7Servlet extends HttpServlet {
         footballer.setClub(club);
         footballer.setSalary(Integer.parseInt(salary));
         footballer.setTransferPrice(Integer.parseInt(transferPrice));
-        DBManager.addFootballer(footballer);
+//        DBManager.addFootballer(footballer);
         resp.sendRedirect("/task1_7");
     }
 }

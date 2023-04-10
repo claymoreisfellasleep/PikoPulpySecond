@@ -19,9 +19,10 @@ public class Task1_3Servlet extends HttpServlet {
         out.print("<h1>TASK 1.3</h1>");
         out.print("<div>");
         out.print("<form action='/task1_3' method='post'>");
-        out.print("<input type='text' placeholder='Insert name' name='user_name'>");
-        out.print("<input type='text' placeholder='Insert surname' name='user_surname'>");
-        out.print("<button>SEND</button>");
+        out.println("<input type='text' placeholder='Insert name' name='user_name'>");
+        out.println("<input type='text' placeholder='Insert surname' name='user_surname'>");
+        out.println("<button>SEND</button>");
+        out.print("<dialog></dialog>");
         out.print("</form>");
         out.print("</div>");
     }
@@ -31,7 +32,6 @@ public class Task1_3Servlet extends HttpServlet {
         String name = req.getParameter("user_name");
         String surname = req.getParameter("user_surname");
         PrintWriter out = resp.getWriter();
-        out.print("<h1>"+name+"</h1>");
-        out.print("<h1>"+surname+"</h1>");
+        out.print("<h1>" + name + " " + surname+"</h1>");
     }
 }

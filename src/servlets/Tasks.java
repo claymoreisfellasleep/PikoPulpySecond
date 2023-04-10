@@ -24,5 +24,6 @@ public class Tasks extends HttpServlet {
         out.print("<a href='/task1_5'><h1>TASK 1.5</h1></a>");
         out.print("<a href='/task1_6'><h1>TASK 1.6</h1></a>");
         out.print("<a href='/task1_7'><h1>TASK 1.7</h1></a>");
+        out.print("<a href='/home'><h1>Index jsp</h1></a>");
     }
 }
