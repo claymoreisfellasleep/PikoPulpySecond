@@ -19,19 +19,19 @@
             <input type="date" name="task_deadline" placeholder="Deadline:">
         </div>
     </div>
-<%--    <div class="row">--%>
-<%--        <div class="col-12 mt-3">--%>
-<%--            <label>Process</label>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--    <div class="row">--%>
-<%--        <div class="col-12">--%>
-<%--            <select class="form-select" name="task_process">--%>
-<%--                <option>Yes</option>--%>
-<%--                <option>No</option>--%>
-<%--            </select>--%>
-<%--        </div>--%>
-<%--    </div>--%>
+    <div class="row">
+        <div class="col-12 mt-3">
+            <label>Process</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <select class="form-select" name="task_process">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+    </div>
     <div class="row">
         <div class="col-12 mt-3">
             <label>Details:</label>
