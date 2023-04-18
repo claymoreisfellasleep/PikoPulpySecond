@@ -14,7 +14,7 @@ public class DBManager {
                         "Создать веб приложение на JAVA EE",
                         "23.10.2021",
                         "Да",
-                        "Not ready"
+                        "Something about coding"
                 )
         );
         tasks.add(
@@ -22,7 +22,7 @@ public class DBManager {
                         "Убраться дома и закупить продукты",
                         "25.10.2021",
                         "Да",
-                        "Not ready"
+                        "House cleaning and buying some vegetables"
                 )
         );
         tasks.add(
@@ -30,7 +30,7 @@ public class DBManager {
                         "Выполнить все домашние задания",
                         "28.10.2021",
                         "Нет",
-                        "Not ready"
+                        "Doing some homework tasks"
                 )
         );
         tasks.add(
@@ -38,7 +38,7 @@ public class DBManager {
                         "Записаться на качку",
                         "12.12.2021",
                         "Нет",
-                        "Not ready"
+                        "Seems like you're determined"
                 )
         );
         tasks.add(
@@ -46,12 +46,12 @@ public class DBManager {
                         "Учить Итальянский",
                         "01.02.2021",
                         "Нет",
-                        "Not ready"
+                        "Huh? Really? What 'bout english?"
                 )
         );
     }
 
-    public static ArrayList<Task> getBooks(){
+    public static ArrayList<Task> getTasks(){
         return tasks;
     }
 
@@ -60,4 +60,13 @@ public class DBManager {
         tasks.add(task);
         id++;
     }
+
+    public static Task getTask(int id){
+        return tasks
+                .stream()
+                .filter(task -> task.getId()==id)
+                .findFirst()
+                .orElse(null);
+    }
+
 }

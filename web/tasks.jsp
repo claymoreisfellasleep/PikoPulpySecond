@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-12">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addTask">
-                        + Add task
+                        + Добавить задачу
                     </button>
 
                     <!-- Modal -->
@@ -42,10 +42,10 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>NAME</th>
-                                <th>DEADLINE</th>
-                                <th>PROCESS</th>
-                                <th>DETAILS</th>
+                                <th>Наименование</th>
+                                <th>Крайний срок</th>
+                                <th>Выполнено</th>
+                                <th>Детали</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -59,7 +59,9 @@
                                 <td><%=task.getName()%></td>
                                 <td><%=task.getDeadline()%></td>
                                 <td><%=task.getProcess()%></td>
-                                <td><a class="btn btn-primary" href="/add-task-page" role="button">Details</a></td>
+                                <td>
+                                    <a class="btn btn-primary btn-sm" href="/details?task_id=<%=task.getId()%>">Детали</a>
+                                </td>
                             </tr>
                         <%
                                 }
