@@ -32,7 +32,7 @@
                     <table class="table table-striped table-hover">
                         <thead>
                             <tr>
-                                <th>ID</th>
+                                <th>ID+</th>
                                 <th>Наименование</th>
                                 <th>Крайний срок</th>
                                 <th>Выполнено</th>
